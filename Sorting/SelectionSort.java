@@ -55,6 +55,15 @@ This means that the algorithm is O(n2) in the best, average, and worst cases —
 the data has no effect on the number of comparisons. As you’ll see later in this chapter, 
 other sorting algorithms have more efficient running times than this.
 
+Selection sort is not difficult to analyze compared to other sorting algorithms since none of the
+loops depend on the data in the array. Selecting the lowest element requires scanning all n elements 
+(this takesn − 1 comparisons) and then swapping it into the first position. 
+Finding the next lowest element requires scanning the remaining n − 1 elements and so on, 
+for (n − 1) + (n − 2) + ... + 2 + 1 = n(n − 1) / 2 ∈ Θ(n2) comparisons. 
+Each of these scans requires one swap for n − 1 elements.
+http://www.java2novice.com/java-sorting-algorithms/selection-sort/
+
+
 Selection sort does have the advantage that it requires at most n – 1 swaps. 
 In situations in which moving data elements is more expensive than comparing them, 
 selection sort may perform better than other algorithms. The efficiency of an algorithm 
